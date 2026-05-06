@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuroClear — Datenschutzerklärung / Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0d6efd;
+            margin-bottom: 8px;
+        }
+        .header p {
+            color: #666;
+            font-size: 14px;
+        }
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 32px;
+        }
+        .lang-btn {
+            padding: 8px 20px;
+            border: 1.5px solid #0d6efd;
+            border-radius: 8px;
+            background: white;
+            color: #0d6efd;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .lang-btn.active {
+            background: #0d6efd;
+            color: white;
+        }
+        .lang-btn:hover { opacity: 0.85; }
+        .section { display: none; }
+        .section.active { display: block; }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 32px 0 12px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            margin: 20px 0 8px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+        .contact {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 24px;
+        }
+        .contact p { margin-bottom: 4px; }
+        .footer {
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e0e0e0;
+            color: #999;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>BuroClear</h1>
+            <p>Datenschutzerkl&auml;rung / Privacy Policy / Pol&iacute;tica de Privacidad</p>
+        </div>
+
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="switchLang('de')">Deutsch</button>
+            <button class="lang-btn" onclick="switchLang('en')">English</button>
+            <button class="lang-btn" onclick="switchLang('es')">Espa&ntilde;ol</button>
+        </div>
+
+        <!-- GERMAN -->
+        <div id="de" class="section active">
+            <h2>Datenschutzerkl&auml;rung</h2>
+            <p><strong>Stand:</strong> Mai 2026<br><strong>Entwickler:</strong> Pedro Hemme</p>
+
+            <h2>1. &Uuml;berblick</h2>
+            <p>BuroClear ist eine Offline-App, die Einwanderern in Deutschland hilft, offizielle Dokumente zu verstehen. Die App wurde mit maximalem Datenschutz entwickelt: Alle Daten werden ausschlie&szlig;lich auf Ihrem Ger&auml;t verarbeitet. Es werden keine Daten an externe Server &uuml;bertragen.</p>
+
+            <h2>2. Welche Daten verarbeitet die App?</h2>
+
+            <h3>a) Dokumententext</h3>
+            <p>Wenn Sie ein Dokument eingeben oder fotografieren, wird der Text ausschlie&szlig;lich im Arbeitsspeicher (RAM) Ihres Ger&auml;ts verarbeitet. Der Text wird nicht auf der Festplatte gespeichert und nicht an Server gesendet. Beim Schlie&szlig;en der App oder beim Starten einer neuen Analyse wird der Text aus dem Speicher gel&ouml;scht.</p>
+
+            <h3>b) Kameraaufnahmen</h3>
+            <p>Wenn Sie die Kamera verwenden, wird das Foto nur zur Texterkennung (OCR) genutzt. Das Foto wird nicht gespeichert &mdash; es wird sofort nach der Texterkennung aus dem Speicher entfernt.</p>
+
+            <h3>c) Spracheinstellung</h3>
+            <p>Die App speichert Ihre gew&auml;hlte App-Sprache in den lokalen Einstellungen (UserDefaults) auf Ihrem Ger&auml;t. Dies ist die einzige Information, die dauerhaft gespeichert wird. Sie enth&auml;lt keine personenbezogenen Daten.</p>
+
+            <h3>d) KI-Analyse</h3>
+            <p>Die Dokumentenanalyse erfolgt vollst&auml;ndig auf Ihrem Ger&auml;t &uuml;ber Apple Intelligence (FoundationModels). Kein Dokumententext wird an Apple-Server oder andere externe Dienste gesendet. Die Verarbeitung erfolgt lokal.</p>
+
+            <h2>3. Welche Daten werden nicht erhoben?</h2>
+            <ul>
+                <li>Keine personenbezogenen Daten</li>
+                <li>Keine Standortdaten</li>
+                <li>Keine Nutzungsstatistiken oder Analytics</li>
+                <li>Keine Werbe-Identifikatoren</li>
+                <li>Keine Cookies oder Tracking</li>
+                <li>Keine Daten&uuml;bertragung an Dritte</li>
+                <li>Keine Serververbindungen</li>
+            </ul>
+
+            <h2>4. Drittanbieter-Dienste</h2>
+            <p>BuroClear verwendet keine Drittanbieter-SDKs, keine Analyse-Tools, keine Werbedienste und keine Cloud-Dienste. Die App funktioniert vollst&auml;ndig offline.</p>
+
+            <h2>5. Sensible Daten</h2>
+            <p>Die App enth&auml;lt eine Funktion zur Erkennung und Maskierung sensibler Daten (IBAN, Sozialversicherungsnummer, Steuer-ID etc.) in der Vorschau. Diese Erkennung erfolgt lokal auf Ihrem Ger&auml;t.</p>
+
+            <h2>6. Datensicherheit</h2>
+            <p>Da alle Daten ausschlie&szlig;lich auf Ihrem Ger&auml;t verarbeitet werden und keine Netzwerkverbindungen hergestellt werden, unterliegt die Datensicherheit den Sicherheitsmechanismen Ihres iOS-Ger&auml;ts (Verschl&uuml;sselung, Sandbox, etc.).</p>
+
+            <h2>7. Ihre Rechte nach DSGVO</h2>
+            <p>Da BuroClear keine personenbezogenen Daten erhebt, speichert oder verarbeitet (&uuml;ber die lokale Spracheinstellung hinaus), sind die meisten DSGVO-Rechte (Auskunft, L&ouml;schung, Daten&uuml;bertragbarkeit) nicht anwendbar. Die Spracheinstellung wird durch Deinstallation der App vollst&auml;ndig gel&ouml;scht.</p>
+            <p>Sie haben dennoch das Recht:</p>
+            <ul>
+                <li>Auskunft &uuml;ber die Datenverarbeitung zu erhalten (diese Datenschutzerkl&auml;rung)</li>
+                <li>Die App jederzeit zu deinstallieren, wodurch alle lokalen Daten gel&ouml;scht werden</li>
+            </ul>
+
+            <h2>8. Kinder</h2>
+            <p>Die App richtet sich nicht an Kinder unter 16 Jahren. Es werden keine Daten von Kindern erhoben.</p>
+
+            <h2>9. &Auml;nderungen</h2>
+            <p>&Auml;nderungen an dieser Datenschutzerkl&auml;rung werden &uuml;ber App-Updates kommuniziert.</p>
+
+            <h2>10. Kontakt</h2>
+            <div class="contact">
+                <p><strong>Pedro Hemme</strong></p>
+                <p>E-Mail: <a href="mailto:pedrohemme@outlook.de">pedrohemme@outlook.de</a></p>
+            </div>
+        </div>
+
+        <!-- ENGLISH -->
+        <div id="en" class="section">
+            <h2>Privacy Policy</h2>
+            <p><strong>Last updated:</strong> May 2026<br><strong>Developer:</strong> Pedro Hemme</p>
+
+            <h2>1. Overview</h2>
+            <p>BuroClear is an offline app that helps immigrants in Germany understand official documents. The app was designed with maximum privacy: all data is processed exclusively on your device. No data is transmitted to external servers.</p>
+
+            <h2>2. What data does the app process?</h2>
+
+            <h3>a) Document text</h3>
+            <p>When you enter or photograph a document, the text is processed exclusively in your device's memory (RAM). The text is not saved to disk and not sent to any server. When you close the app or start a new analysis, the text is removed from memory.</p>
+
+            <h3>b) Camera captures</h3>
+            <p>When you use the camera, the photo is only used for text recognition (OCR). The photo is not saved &mdash; it is removed from memory immediately after text recognition.</p>
+
+            <h3>c) Language preference</h3>
+            <p>The app stores your chosen app language in local settings (UserDefaults) on your device. This is the only information that is permanently stored. It contains no personal data.</p>
+
+            <h3>d) AI analysis</h3>
+            <p>Document analysis is performed entirely on your device using Apple Intelligence (FoundationModels). No document text is sent to Apple servers or any other external services. All processing is local.</p>
+
+            <h2>3. What data is not collected?</h2>
+            <ul>
+                <li>No personal data</li>
+                <li>No location data</li>
+                <li>No usage statistics or analytics</li>
+                <li>No advertising identifiers</li>
+                <li>No cookies or tracking</li>
+                <li>No data shared with third parties</li>
+                <li>No server connections</li>
+            </ul>
+
+            <h2>4. Third-party services</h2>
+            <p>BuroClear uses no third-party SDKs, no analytics tools, no advertising services, and no cloud services. The app works entirely offline.</p>
+
+            <h2>5. Sensitive data</h2>
+            <p>The app includes a feature to detect and mask sensitive data (IBAN, social security number, tax ID, etc.) in the preview. This detection is performed locally on your device.</p>
+
+            <h2>6. Data security</h2>
+            <p>Since all data is processed exclusively on your device and no network connections are made, data security is governed by your iOS device's security mechanisms (encryption, sandbox, etc.).</p>
+
+            <h2>7. Your rights under GDPR</h2>
+            <p>Since BuroClear does not collect, store, or process personal data (beyond the local language preference), most GDPR rights (access, deletion, portability) are not applicable. The language preference is completely deleted by uninstalling the app.</p>
+            <p>You still have the right to:</p>
+            <ul>
+                <li>Receive information about data processing (this privacy policy)</li>
+                <li>Uninstall the app at any time, which deletes all local data</li>
+            </ul>
+
+            <h2>8. Children</h2>
+            <p>The app is not intended for children under 16. No data is collected from children.</p>
+
+            <h2>9. Changes</h2>
+            <p>Changes to this privacy policy will be communicated through app updates.</p>
+
+            <h2>10. Contact</h2>
+            <div class="contact">
+                <p><strong>Pedro Hemme</strong></p>
+                <p>Email: <a href="mailto:pedrohemme@outlook.de">pedrohemme@outlook.de</a></p>
+            </div>
+        </div>
+
+        <!-- SPANISH -->
+        <div id="es" class="section">
+            <h2>Pol&iacute;tica de Privacidad</h2>
+            <p><strong>&Uacute;ltima actualizaci&oacute;n:</strong> Mayo 2026<br><strong>Desarrollador:</strong> Pedro Hemme</p>
+
+            <h2>1. Resumen</h2>
+            <p>BuroClear es una app offline que ayuda a inmigrantes en Alemania a entender documentos oficiales. La app fue dise&ntilde;ada con m&aacute;xima privacidad: todos los datos se procesan exclusivamente en tu dispositivo. No se transmiten datos a servidores externos.</p>
+
+            <h2>2. &iquest;Qu&eacute; datos procesa la app?</h2>
+
+            <h3>a) Texto del documento</h3>
+            <p>Cuando introduces o fotograf&iacute;as un documento, el texto se procesa exclusivamente en la memoria (RAM) de tu dispositivo. El texto no se guarda en disco ni se env&iacute;a a ning&uacute;n servidor. Al cerrar la app o iniciar un nuevo an&aacute;lisis, el texto se elimina de la memoria.</p>
+
+            <h3>b) Capturas de c&aacute;mara</h3>
+            <p>Cuando usas la c&aacute;mara, la foto solo se utiliza para el reconocimiento de texto (OCR). La foto no se guarda &mdash; se elimina de la memoria inmediatamente despu&eacute;s del reconocimiento de texto.</p>
+
+            <h3>c) Preferencia de idioma</h3>
+            <p>La app guarda tu idioma elegido en las configuraciones locales (UserDefaults) de tu dispositivo. Esta es la &uacute;nica informaci&oacute;n que se almacena permanentemente. No contiene datos personales.</p>
+
+            <h3>d) An&aacute;lisis con IA</h3>
+            <p>El an&aacute;lisis de documentos se realiza completamente en tu dispositivo usando Apple Intelligence (FoundationModels). Ning&uacute;n texto del documento se env&iacute;a a servidores de Apple ni a otros servicios externos. Todo el procesamiento es local.</p>
+
+            <h2>3. &iquest;Qu&eacute; datos no se recopilan?</h2>
+            <ul>
+                <li>Ning&uacute;n dato personal</li>
+                <li>Ning&uacute;n dato de ubicaci&oacute;n</li>
+                <li>Ninguna estad&iacute;stica de uso ni anal&iacute;tica</li>
+                <li>Ning&uacute;n identificador publicitario</li>
+                <li>Ninguna cookie ni rastreo</li>
+                <li>Ning&uacute;n dato compartido con terceros</li>
+                <li>Ninguna conexi&oacute;n a servidores</li>
+            </ul>
+
+            <h2>4. Servicios de terceros</h2>
+            <p>BuroClear no utiliza SDKs de terceros, herramientas de anal&iacute;tica, servicios publicitarios ni servicios en la nube. La app funciona completamente offline.</p>
+
+            <h2>5. Datos sensibles</h2>
+            <p>La app incluye una funci&oacute;n para detectar y ocultar datos sensibles (IBAN, n&uacute;mero de seguridad social, identificaci&oacute;n fiscal, etc.) en la vista previa. Esta detecci&oacute;n se realiza localmente en tu dispositivo.</p>
+
+            <h2>6. Seguridad de datos</h2>
+            <p>Dado que todos los datos se procesan exclusivamente en tu dispositivo y no se realizan conexiones de red, la seguridad de los datos est&aacute; garantizada por los mecanismos de seguridad de tu dispositivo iOS (cifrado, sandbox, etc.).</p>
+
+            <h2>7. Tus derechos seg&uacute;n el RGPD/DSGVO</h2>
+            <p>Dado que BuroClear no recopila, almacena ni procesa datos personales (m&aacute;s all&aacute; de la preferencia de idioma local), la mayor&iacute;a de los derechos del RGPD (acceso, eliminaci&oacute;n, portabilidad) no son aplicables. La preferencia de idioma se elimina completamente al desinstalar la app.</p>
+            <p>A&uacute;n tienes derecho a:</p>
+            <ul>
+                <li>Recibir informaci&oacute;n sobre el procesamiento de datos (esta pol&iacute;tica de privacidad)</li>
+                <li>Desinstalar la app en cualquier momento, lo que elimina todos los datos locales</li>
+            </ul>
+
+            <h2>8. Menores</h2>
+            <p>La app no est&aacute; dirigida a menores de 16 a&ntilde;os. No se recopilan datos de menores.</p>
+
+            <h2>9. Cambios</h2>
+            <p>Los cambios en esta pol&iacute;tica de privacidad se comunicar&aacute;n mediante actualizaciones de la app.</p>
+
+            <h2>10. Contacto</h2>
+            <div class="contact">
+                <p><strong>Pedro Hemme</strong></p>
+                <p>Correo: <a href="mailto:pedrohemme@outlook.de">pedrohemme@outlook.de</a></p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 BuroClear &mdash; Pedro Hemme</p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

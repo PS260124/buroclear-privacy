@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BuroClear — Datenschutzerklärung / Privacy Policy</title>
+    <title>BuroClear &mdash; Impressum &amp; Datenschutz</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -19,8 +19,8 @@
         }
         .header {
             text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 32px;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
             border-bottom: 1px solid #e0e0e0;
         }
         .header h1 {
@@ -29,18 +29,15 @@
             color: #0d6efd;
             margin-bottom: 8px;
         }
-        .header p {
-            color: #666;
-            font-size: 14px;
-        }
-        .lang-switch {
+        .header p { color: #666; font-size: 14px; }
+        .tab-row {
             display: flex;
             justify-content: center;
             gap: 8px;
-            margin-bottom: 32px;
+            margin-bottom: 8px;
         }
-        .lang-btn {
-            padding: 8px 20px;
+        .tab-btn {
+            padding: 9px 22px;
             border: 1.5px solid #0d6efd;
             border-radius: 8px;
             background: white;
@@ -50,40 +47,37 @@
             cursor: pointer;
             transition: all 0.2s;
         }
-        .lang-btn.active {
-            background: #0d6efd;
-            color: white;
+        .tab-btn.active { background: #0d6efd; color: white; }
+        .tab-btn:hover { opacity: 0.85; }
+        .lang-row {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            margin-bottom: 28px;
         }
-        .lang-btn:hover { opacity: 0.85; }
+        .lang-btn {
+            padding: 6px 14px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background: white;
+            color: #555;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .lang-btn.active { border-color: #0d6efd; color: #0d6efd; font-weight: 600; }
         .section { display: none; }
         .section.active { display: block; }
-        h2 {
-            font-size: 22px;
-            font-weight: 700;
-            color: #1a1a1a;
-            margin: 32px 0 12px;
-        }
-        h3 {
-            font-size: 16px;
-            font-weight: 600;
-            color: #333;
-            margin: 20px 0 8px;
-        }
-        p, li {
-            font-size: 15px;
-            color: #444;
-            margin-bottom: 10px;
-        }
-        ul {
-            padding-left: 20px;
-            margin-bottom: 12px;
-        }
+        h2 { font-size: 20px; font-weight: 700; color: #1a1a1a; margin: 28px 0 10px; }
+        h3 { font-size: 16px; font-weight: 600; color: #333; margin: 18px 0 6px; }
+        p, li { font-size: 15px; color: #444; margin-bottom: 10px; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
         .contact {
             background: white;
             border: 1px solid #e0e0e0;
             border-radius: 12px;
             padding: 20px;
-            margin-top: 24px;
+            margin-top: 16px;
         }
         .contact p { margin-bottom: 4px; }
         .footer {
@@ -97,219 +91,333 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>BuroClear</h1>
-            <p>Datenschutzerkl&auml;rung / Privacy Policy / Pol&iacute;tica de Privacidad</p>
-        </div>
-
-        <div class="lang-switch">
-            <button class="lang-btn active" onclick="switchLang('de')">Deutsch</button>
-            <button class="lang-btn" onclick="switchLang('en')">English</button>
-            <button class="lang-btn" onclick="switchLang('es')">Espa&ntilde;ol</button>
-        </div>
-
-        <!-- GERMAN -->
-        <div id="de" class="section active">
-            <h2>Datenschutzerkl&auml;rung</h2>
-            <p><strong>Stand:</strong> Mai 2026<br><strong>Entwickler:</strong> Pedro Hemme</p>
-
-            <h2>1. &Uuml;berblick</h2>
-            <p>BuroClear ist eine Offline-App, die Einwanderern in Deutschland hilft, offizielle Dokumente zu verstehen. Die App wurde mit maximalem Datenschutz entwickelt: Alle Daten werden ausschlie&szlig;lich auf Ihrem Ger&auml;t verarbeitet. Es werden keine Daten an externe Server &uuml;bertragen.</p>
-
-            <h2>2. Welche Daten verarbeitet die App?</h2>
-
-            <h3>a) Dokumententext</h3>
-            <p>Wenn Sie ein Dokument eingeben oder fotografieren, wird der Text ausschlie&szlig;lich im Arbeitsspeicher (RAM) Ihres Ger&auml;ts verarbeitet. Der Text wird nicht auf der Festplatte gespeichert und nicht an Server gesendet. Beim Schlie&szlig;en der App oder beim Starten einer neuen Analyse wird der Text aus dem Speicher gel&ouml;scht.</p>
-
-            <h3>b) Kameraaufnahmen</h3>
-            <p>Wenn Sie die Kamera verwenden, wird das Foto nur zur Texterkennung (OCR) genutzt. Das Foto wird nicht gespeichert &mdash; es wird sofort nach der Texterkennung aus dem Speicher entfernt.</p>
-
-            <h3>c) Spracheinstellung</h3>
-            <p>Die App speichert Ihre gew&auml;hlte App-Sprache in den lokalen Einstellungen (UserDefaults) auf Ihrem Ger&auml;t. Dies ist die einzige Information, die dauerhaft gespeichert wird. Sie enth&auml;lt keine personenbezogenen Daten.</p>
-
-            <h3>d) KI-Analyse</h3>
-            <p>Die Dokumentenanalyse erfolgt vollst&auml;ndig auf Ihrem Ger&auml;t &uuml;ber Apple Intelligence (FoundationModels). Kein Dokumententext wird an Apple-Server oder andere externe Dienste gesendet. Die Verarbeitung erfolgt lokal.</p>
-
-            <h2>3. Welche Daten werden nicht erhoben?</h2>
-            <ul>
-                <li>Keine personenbezogenen Daten</li>
-                <li>Keine Standortdaten</li>
-                <li>Keine Nutzungsstatistiken oder Analytics</li>
-                <li>Keine Werbe-Identifikatoren</li>
-                <li>Keine Cookies oder Tracking</li>
-                <li>Keine Daten&uuml;bertragung an Dritte</li>
-                <li>Keine Serververbindungen</li>
-            </ul>
-
-            <h2>4. Drittanbieter-Dienste</h2>
-            <p>BuroClear verwendet keine Drittanbieter-SDKs, keine Analyse-Tools, keine Werbedienste und keine Cloud-Dienste. Die App funktioniert vollst&auml;ndig offline.</p>
-
-            <h2>5. Sensible Daten</h2>
-            <p>Die App enth&auml;lt eine Funktion zur Erkennung und Maskierung sensibler Daten (IBAN, Sozialversicherungsnummer, Steuer-ID etc.) in der Vorschau. Diese Erkennung erfolgt lokal auf Ihrem Ger&auml;t.</p>
-
-            <h2>6. Datensicherheit</h2>
-            <p>Da alle Daten ausschlie&szlig;lich auf Ihrem Ger&auml;t verarbeitet werden und keine Netzwerkverbindungen hergestellt werden, unterliegt die Datensicherheit den Sicherheitsmechanismen Ihres iOS-Ger&auml;ts (Verschl&uuml;sselung, Sandbox, etc.).</p>
-
-            <h2>7. Ihre Rechte nach DSGVO</h2>
-            <p>Da BuroClear keine personenbezogenen Daten erhebt, speichert oder verarbeitet (&uuml;ber die lokale Spracheinstellung hinaus), sind die meisten DSGVO-Rechte (Auskunft, L&ouml;schung, Daten&uuml;bertragbarkeit) nicht anwendbar. Die Spracheinstellung wird durch Deinstallation der App vollst&auml;ndig gel&ouml;scht.</p>
-            <p>Sie haben dennoch das Recht:</p>
-            <ul>
-                <li>Auskunft &uuml;ber die Datenverarbeitung zu erhalten (diese Datenschutzerkl&auml;rung)</li>
-                <li>Die App jederzeit zu deinstallieren, wodurch alle lokalen Daten gel&ouml;scht werden</li>
-            </ul>
-
-            <h2>8. Kinder</h2>
-            <p>Die App richtet sich nicht an Kinder unter 16 Jahren. Es werden keine Daten von Kindern erhoben.</p>
-
-            <h2>9. &Auml;nderungen</h2>
-            <p>&Auml;nderungen an dieser Datenschutzerkl&auml;rung werden &uuml;ber App-Updates kommuniziert.</p>
-
-            <h2>10. Kontakt</h2>
-            <div class="contact">
-                <p><strong>Pedro Hemme</strong></p>
-                <p>E-Mail: <a href="mailto:pedrohemme@outlook.de">pedrohemme@outlook.de</a></p>
-            </div>
-        </div>
-
-        <!-- ENGLISH -->
-        <div id="en" class="section">
-            <h2>Privacy Policy</h2>
-            <p><strong>Last updated:</strong> May 2026<br><strong>Developer:</strong> Pedro Hemme</p>
-
-            <h2>1. Overview</h2>
-            <p>BuroClear is an offline app that helps immigrants in Germany understand official documents. The app was designed with maximum privacy: all data is processed exclusively on your device. No data is transmitted to external servers.</p>
-
-            <h2>2. What data does the app process?</h2>
-
-            <h3>a) Document text</h3>
-            <p>When you enter or photograph a document, the text is processed exclusively in your device's memory (RAM). The text is not saved to disk and not sent to any server. When you close the app or start a new analysis, the text is removed from memory.</p>
-
-            <h3>b) Camera captures</h3>
-            <p>When you use the camera, the photo is only used for text recognition (OCR). The photo is not saved &mdash; it is removed from memory immediately after text recognition.</p>
-
-            <h3>c) Language preference</h3>
-            <p>The app stores your chosen app language in local settings (UserDefaults) on your device. This is the only information that is permanently stored. It contains no personal data.</p>
-
-            <h3>d) AI analysis</h3>
-            <p>Document analysis is performed entirely on your device using Apple Intelligence (FoundationModels). No document text is sent to Apple servers or any other external services. All processing is local.</p>
-
-            <h2>3. What data is not collected?</h2>
-            <ul>
-                <li>No personal data</li>
-                <li>No location data</li>
-                <li>No usage statistics or analytics</li>
-                <li>No advertising identifiers</li>
-                <li>No cookies or tracking</li>
-                <li>No data shared with third parties</li>
-                <li>No server connections</li>
-            </ul>
-
-            <h2>4. Third-party services</h2>
-            <p>BuroClear uses no third-party SDKs, no analytics tools, no advertising services, and no cloud services. The app works entirely offline.</p>
-
-            <h2>5. Sensitive data</h2>
-            <p>The app includes a feature to detect and mask sensitive data (IBAN, social security number, tax ID, etc.) in the preview. This detection is performed locally on your device.</p>
-
-            <h2>6. Data security</h2>
-            <p>Since all data is processed exclusively on your device and no network connections are made, data security is governed by your iOS device's security mechanisms (encryption, sandbox, etc.).</p>
-
-            <h2>7. Your rights under GDPR</h2>
-            <p>Since BuroClear does not collect, store, or process personal data (beyond the local language preference), most GDPR rights (access, deletion, portability) are not applicable. The language preference is completely deleted by uninstalling the app.</p>
-            <p>You still have the right to:</p>
-            <ul>
-                <li>Receive information about data processing (this privacy policy)</li>
-                <li>Uninstall the app at any time, which deletes all local data</li>
-            </ul>
-
-            <h2>8. Children</h2>
-            <p>The app is not intended for children under 16. No data is collected from children.</p>
-
-            <h2>9. Changes</h2>
-            <p>Changes to this privacy policy will be communicated through app updates.</p>
-
-            <h2>10. Contact</h2>
-            <div class="contact">
-                <p><strong>Pedro Hemme</strong></p>
-                <p>Email: <a href="mailto:pedrohemme@outlook.de">pedrohemme@outlook.de</a></p>
-            </div>
-        </div>
-
-        <!-- SPANISH -->
-        <div id="es" class="section">
-            <h2>Pol&iacute;tica de Privacidad</h2>
-            <p><strong>&Uacute;ltima actualizaci&oacute;n:</strong> Mayo 2026<br><strong>Desarrollador:</strong> Pedro Hemme</p>
-
-            <h2>1. Resumen</h2>
-            <p>BuroClear es una app offline que ayuda a inmigrantes en Alemania a entender documentos oficiales. La app fue dise&ntilde;ada con m&aacute;xima privacidad: todos los datos se procesan exclusivamente en tu dispositivo. No se transmiten datos a servidores externos.</p>
-
-            <h2>2. &iquest;Qu&eacute; datos procesa la app?</h2>
-
-            <h3>a) Texto del documento</h3>
-            <p>Cuando introduces o fotograf&iacute;as un documento, el texto se procesa exclusivamente en la memoria (RAM) de tu dispositivo. El texto no se guarda en disco ni se env&iacute;a a ning&uacute;n servidor. Al cerrar la app o iniciar un nuevo an&aacute;lisis, el texto se elimina de la memoria.</p>
-
-            <h3>b) Capturas de c&aacute;mara</h3>
-            <p>Cuando usas la c&aacute;mara, la foto solo se utiliza para el reconocimiento de texto (OCR). La foto no se guarda &mdash; se elimina de la memoria inmediatamente despu&eacute;s del reconocimiento de texto.</p>
-
-            <h3>c) Preferencia de idioma</h3>
-            <p>La app guarda tu idioma elegido en las configuraciones locales (UserDefaults) de tu dispositivo. Esta es la &uacute;nica informaci&oacute;n que se almacena permanentemente. No contiene datos personales.</p>
-
-            <h3>d) An&aacute;lisis con IA</h3>
-            <p>El an&aacute;lisis de documentos se realiza completamente en tu dispositivo usando Apple Intelligence (FoundationModels). Ning&uacute;n texto del documento se env&iacute;a a servidores de Apple ni a otros servicios externos. Todo el procesamiento es local.</p>
-
-            <h2>3. &iquest;Qu&eacute; datos no se recopilan?</h2>
-            <ul>
-                <li>Ning&uacute;n dato personal</li>
-                <li>Ning&uacute;n dato de ubicaci&oacute;n</li>
-                <li>Ninguna estad&iacute;stica de uso ni anal&iacute;tica</li>
-                <li>Ning&uacute;n identificador publicitario</li>
-                <li>Ninguna cookie ni rastreo</li>
-                <li>Ning&uacute;n dato compartido con terceros</li>
-                <li>Ninguna conexi&oacute;n a servidores</li>
-            </ul>
-
-            <h2>4. Servicios de terceros</h2>
-            <p>BuroClear no utiliza SDKs de terceros, herramientas de anal&iacute;tica, servicios publicitarios ni servicios en la nube. La app funciona completamente offline.</p>
-
-            <h2>5. Datos sensibles</h2>
-            <p>La app incluye una funci&oacute;n para detectar y ocultar datos sensibles (IBAN, n&uacute;mero de seguridad social, identificaci&oacute;n fiscal, etc.) en la vista previa. Esta detecci&oacute;n se realiza localmente en tu dispositivo.</p>
-
-            <h2>6. Seguridad de datos</h2>
-            <p>Dado que todos los datos se procesan exclusivamente en tu dispositivo y no se realizan conexiones de red, la seguridad de los datos est&aacute; garantizada por los mecanismos de seguridad de tu dispositivo iOS (cifrado, sandbox, etc.).</p>
-
-            <h2>7. Tus derechos seg&uacute;n el RGPD/DSGVO</h2>
-            <p>Dado que BuroClear no recopila, almacena ni procesa datos personales (m&aacute;s all&aacute; de la preferencia de idioma local), la mayor&iacute;a de los derechos del RGPD (acceso, eliminaci&oacute;n, portabilidad) no son aplicables. La preferencia de idioma se elimina completamente al desinstalar la app.</p>
-            <p>A&uacute;n tienes derecho a:</p>
-            <ul>
-                <li>Recibir informaci&oacute;n sobre el procesamiento de datos (esta pol&iacute;tica de privacidad)</li>
-                <li>Desinstalar la app en cualquier momento, lo que elimina todos los datos locales</li>
-            </ul>
-
-            <h2>8. Menores</h2>
-            <p>La app no est&aacute; dirigida a menores de 16 a&ntilde;os. No se recopilan datos de menores.</p>
-
-            <h2>9. Cambios</h2>
-            <p>Los cambios en esta pol&iacute;tica de privacidad se comunicar&aacute;n mediante actualizaciones de la app.</p>
-
-            <h2>10. Contacto</h2>
-            <div class="contact">
-                <p><strong>Pedro Hemme</strong></p>
-                <p>Correo: <a href="mailto:pedrohemme@outlook.de">pedrohemme@outlook.de</a></p>
-            </div>
-        </div>
-
-        <div class="footer">
-            <p>&copy; 2026 BuroClear &mdash; Pedro Hemme</p>
-        </div>
+<div class="container">
+    <div class="header">
+        <h1>BuroClear</h1>
+        <p>Impressum &amp; Datenschutzerkl&auml;rung</p>
     </div>
 
-    <script>
-        function switchLang(lang) {
-            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-            document.getElementById(lang).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
+    <div class="tab-row">
+        <button class="tab-btn active" onclick="switchTab('impressum')">Impressum</button>
+        <button class="tab-btn" onclick="switchTab('privacy')">Datenschutz / Privacy</button>
+    </div>
+    <div class="lang-row">
+        <button class="lang-btn active" onclick="switchLang('de')">Deutsch</button>
+        <button class="lang-btn" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" onclick="switchLang('es')">Espa&ntilde;ol</button>
+    </div>
+
+    <!-- ==================== IMPRESSUM ==================== -->
+
+    <!-- Impressum DE -->
+    <div id="impressum-de" class="section active" data-tab="impressum" data-lang="de">
+        <h2>Impressum</h2>
+        <p>Angaben gem&auml;&szlig; &sect; 5 DDG (Digitale-Dienste-Gesetz)<br>und &sect; 18 Abs. 2 MStV (Medienstaatsvertrag)</p>
+
+        <h3>Verantwortlicher</h3>
+        <div class="contact">
+            <p><strong>Pedro Hemme</strong></p>
+            <p>Deutschenbaurstra&szlig;e 33A</p>
+            <p>86157 Augsburg, Deutschland</p>
+            <p>E-Mail: <a href="mailto:info@pedrohemme.dev">info@pedrohemme.dev</a></p>
+        </div>
+
+        <h2>Haftungsausschluss</h2>
+        <h3>Haftung f&uuml;r Inhalte</h3>
+        <p>Die Inhalte dieser App wurden mit gr&ouml;&szlig;ter Sorgfalt erstellt. F&uuml;r die Richtigkeit, Vollst&auml;ndigkeit und Aktualit&auml;t der Inhalte k&ouml;nnen wir jedoch keine Gew&auml;hr &uuml;bernehmen. Die App bietet eine KI-gest&uuml;tzte &Uuml;bersetzung und Analyse offizieller Dokumente. Die Ergebnisse dienen ausschlie&szlig;lich der Orientierung und stellen keine Rechtsberatung dar.</p>
+
+        <h3>KI-Hinweis</h3>
+        <p>Diese App verwendet Apple Intelligence (FoundationModels) zur lokalen Analyse von Dokumenten auf Ihrem Ger&auml;t. Die KI-generierten Ergebnisse k&ouml;nnen Fehler enthalten und ersetzen keine professionelle Beratung. Alle Analysen erfolgen ausschlie&szlig;lich auf dem Ger&auml;t des Nutzers &mdash; es werden keine Daten an Server &uuml;bertragen.</p>
+
+        <h2>Urheberrecht</h2>
+        <p>Die durch den App-Betreiber erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Die Vervielf&auml;ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung au&szlig;erhalb der Grenzen des Urheberrechts bed&uuml;rfen der schriftlichen Zustimmung des Erstellers.</p>
+
+        <h2>Streitbeilegung</h2>
+        <p>Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a></p>
+        <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    </div>
+
+    <!-- Impressum EN -->
+    <div id="impressum-en" class="section" data-tab="impressum" data-lang="en">
+        <h2>Legal Notice (Impressum)</h2>
+        <p>Information according to &sect; 5 DDG (German Digital Services Act)<br>and &sect; 18 (2) MStV (German Interstate Media Treaty)</p>
+
+        <h3>Responsible Person</h3>
+        <div class="contact">
+            <p><strong>Pedro Hemme</strong></p>
+            <p>Deutschenbaurstra&szlig;e 33A</p>
+            <p>86157 Augsburg, Germany</p>
+            <p>Email: <a href="mailto:info@pedrohemme.dev">info@pedrohemme.dev</a></p>
+        </div>
+
+        <h2>Disclaimer</h2>
+        <h3>Liability for Content</h3>
+        <p>The contents of this app have been created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. This app provides AI-assisted translation and analysis of official documents. The results are for informational purposes only and do not constitute legal advice.</p>
+
+        <h3>AI Disclosure</h3>
+        <p>This app uses Apple Intelligence (FoundationModels) for local document analysis on your device. AI-generated results may contain errors and do not replace professional advice. All analyses are performed exclusively on the user's device &mdash; no data is transmitted to servers.</p>
+
+        <h2>Copyright</h2>
+        <p>The content and works created by the app operator are subject to German copyright law. Reproduction, processing, distribution, and any type of use beyond the limits of copyright law require written consent of the creator.</p>
+
+        <h2>Dispute Resolution</h2>
+        <p>The European Commission provides an online dispute resolution (ODR) platform: <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a></p>
+        <p>We are neither obligated nor willing to participate in dispute resolution proceedings before a consumer arbitration board.</p>
+    </div>
+
+    <!-- Impressum ES -->
+    <div id="impressum-es" class="section" data-tab="impressum" data-lang="es">
+        <h2>Aviso Legal (Impressum)</h2>
+        <p>Informaci&oacute;n seg&uacute;n &sect; 5 DDG (Ley Alemana de Servicios Digitales)<br>y &sect; 18 (2) MStV (Tratado Interestatal de Medios de Alemania)</p>
+
+        <h3>Responsable</h3>
+        <div class="contact">
+            <p><strong>Pedro Hemme</strong></p>
+            <p>Deutschenbaurstra&szlig;e 33A</p>
+            <p>86157 Augsburg, Alemania</p>
+            <p>Correo: <a href="mailto:info@pedrohemme.dev">info@pedrohemme.dev</a></p>
+        </div>
+
+        <h2>Descargo de responsabilidad</h2>
+        <h3>Responsabilidad por el contenido</h3>
+        <p>Los contenidos de esta app han sido creados con el mayor cuidado. Sin embargo, no podemos garantizar la exactitud, integridad o actualidad del contenido. Esta app proporciona traducci&oacute;n y an&aacute;lisis de documentos oficiales asistidos por IA. Los resultados son solo informativos y no constituyen asesoramiento legal.</p>
+
+        <h3>Aviso sobre IA</h3>
+        <p>Esta app utiliza Apple Intelligence (FoundationModels) para el an&aacute;lisis local de documentos en tu dispositivo. Los resultados generados por IA pueden contener errores y no sustituyen el asesoramiento profesional. Todos los an&aacute;lisis se realizan exclusivamente en el dispositivo del usuario &mdash; no se transmiten datos a servidores.</p>
+
+        <h2>Derechos de autor</h2>
+        <p>El contenido y las obras creados por el operador de la app est&aacute;n sujetos a la ley alemana de derechos de autor. La reproducci&oacute;n, procesamiento, distribuci&oacute;n y cualquier tipo de uso m&aacute;s all&aacute; de los l&iacute;mites de la ley requieren el consentimiento escrito del creador.</p>
+
+        <h2>Resoluci&oacute;n de disputas</h2>
+        <p>La Comisi&oacute;n Europea proporciona una plataforma de resoluci&oacute;n de disputas en l&iacute;nea (ODR): <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a></p>
+        <p>No estamos obligados ni dispuestos a participar en procedimientos de resoluci&oacute;n de disputas ante una junta de arbitraje del consumidor.</p>
+    </div>
+
+    <!-- ==================== DATENSCHUTZ ==================== -->
+
+    <!-- Datenschutz DE -->
+    <div id="privacy-de" class="section" data-tab="privacy" data-lang="de">
+        <h2>Datenschutzerkl&auml;rung</h2>
+        <p><strong>Stand:</strong> Mai 2026<br><strong>Verantwortlicher gem&auml;&szlig; Art. 4 Abs. 7 DSGVO:</strong></p>
+        <div class="contact">
+            <p><strong>Pedro Hemme</strong></p>
+            <p>Deutschenbaurstra&szlig;e 33A, 86157 Augsburg</p>
+            <p>E-Mail: <a href="mailto:info@pedrohemme.dev">info@pedrohemme.dev</a></p>
+        </div>
+
+        <h2>1. &Uuml;berblick</h2>
+        <p>BuroClear ist eine Offline-App, die Einwanderern in Deutschland hilft, offizielle Dokumente zu verstehen. Alle Daten werden ausschlie&szlig;lich auf Ihrem Ger&auml;t verarbeitet. Es werden keine Daten an externe Server &uuml;bertragen.</p>
+
+        <h2>2. Rechtsgrundlage</h2>
+        <p>Die Verarbeitung der Spracheinstellung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse). Die Nutzung der Kamera erfolgt auf Grundlage Ihrer Einwilligung gem&auml;&szlig; Art. 6 Abs. 1 lit. a DSGVO.</p>
+
+        <h2>3. Welche Daten verarbeitet die App?</h2>
+        <h3>a) Dokumententext</h3>
+        <p>Der Text wird ausschlie&szlig;lich im Arbeitsspeicher (RAM) verarbeitet, nicht auf der Festplatte gespeichert und nicht an Server gesendet.</p>
+        <h3>b) Kameraaufnahmen</h3>
+        <p>Fotos werden nur zur Texterkennung (OCR) genutzt und sofort nach der Erkennung aus dem Speicher entfernt. Die Kameranutzung erfordert Ihre ausdr&uuml;ckliche Zustimmung.</p>
+        <h3>c) Spracheinstellung</h3>
+        <p>Die gew&auml;hlte App-Sprache wird lokal in UserDefaults gespeichert. Dies ist die einzige dauerhaft gespeicherte Information.</p>
+        <h3>d) KI-Analyse</h3>
+        <p>Die Analyse erfolgt vollst&auml;ndig lokal &uuml;ber Apple Intelligence (FoundationModels). Kein Text wird an Server gesendet.</p>
+
+        <h2>4. Welche Daten werden nicht erhoben?</h2>
+        <ul>
+            <li>Keine personenbezogenen Daten</li>
+            <li>Keine Standortdaten</li>
+            <li>Keine Nutzungsstatistiken oder Analytics</li>
+            <li>Keine Werbe-Identifikatoren (IDFA)</li>
+            <li>Keine Cookies oder Tracking</li>
+            <li>Keine Daten&uuml;bertragung an Dritte</li>
+            <li>Keine Serververbindungen</li>
+            <li>Keine IP-Adressen oder Ger&auml;te-Identifikatoren</li>
+        </ul>
+
+        <h2>5. Drittanbieter &amp; Daten&uuml;bermittlung</h2>
+        <p>Keine Drittanbieter-SDKs, keine Cloud-Dienste, keine Daten&uuml;bermittlung in Drittl&auml;nder. Die App funktioniert vollst&auml;ndig offline.</p>
+
+        <h2>6. Speicherdauer</h2>
+        <p>Dokumententext und Kameraaufnahmen: nur w&auml;hrend der aktiven Nutzung im RAM. Spracheinstellung: bis zur Deinstallation.</p>
+
+        <h2>7. Ihre Rechte nach DSGVO</h2>
+        <ul>
+            <li>Recht auf Auskunft (Art. 15)</li>
+            <li>Recht auf Berichtigung (Art. 16)</li>
+            <li>Recht auf L&ouml;schung (Art. 17)</li>
+            <li>Recht auf Einschr&auml;nkung (Art. 18)</li>
+            <li>Recht auf Daten&uuml;bertragbarkeit (Art. 20)</li>
+            <li>Recht auf Widerspruch (Art. 21)</li>
+            <li>Recht auf Widerruf der Einwilligung (Art. 7 Abs. 3)</li>
+            <li>Recht auf Beschwerde bei einer Aufsichtsbeh&ouml;rde (Art. 77)</li>
+        </ul>
+        <p>Die Kamera-Einwilligung k&ouml;nnen Sie jederzeit in den iOS-Einstellungen widerrufen. Die Spracheinstellung wird durch Deinstallation gel&ouml;scht.</p>
+        <p><strong>Zust&auml;ndige Aufsichtsbeh&ouml;rde:</strong><br>Bayerisches Landesamt f&uuml;r Datenschutzaufsicht (BayLDA)<br>Promenade 18, 91522 Ansbach<br><a href="https://www.lda.bayern.de" target="_blank">https://www.lda.bayern.de</a></p>
+
+        <h2>8. Kinder</h2>
+        <p>Die App richtet sich nicht an Kinder unter 16 Jahren (Art. 8 DSGVO).</p>
+
+        <h2>9. &Auml;nderungen</h2>
+        <p>&Auml;nderungen werden &uuml;ber App-Updates kommuniziert.</p>
+    </div>
+
+    <!-- Datenschutz EN -->
+    <div id="privacy-en" class="section" data-tab="privacy" data-lang="en">
+        <h2>Privacy Policy</h2>
+        <p><strong>Last updated:</strong> May 2026<br><strong>Data controller (Art. 4 (7) GDPR):</strong></p>
+        <div class="contact">
+            <p><strong>Pedro Hemme</strong></p>
+            <p>Deutschenbaurstra&szlig;e 33A, 86157 Augsburg, Germany</p>
+            <p>Email: <a href="mailto:info@pedrohemme.dev">info@pedrohemme.dev</a></p>
+        </div>
+
+        <h2>1. Overview</h2>
+        <p>BuroClear is an offline app that helps immigrants in Germany understand official documents. All data is processed exclusively on your device. No data is transmitted to external servers.</p>
+
+        <h2>2. Legal Basis</h2>
+        <p>Language preference: Art. 6 (1) (f) GDPR (legitimate interest). Camera: Art. 6 (1) (a) GDPR (consent).</p>
+
+        <h2>3. What data does the app process?</h2>
+        <h3>a) Document text</h3>
+        <p>Processed exclusively in RAM. Not saved to disk, not sent to any server.</p>
+        <h3>b) Camera captures</h3>
+        <p>Used only for OCR, removed from memory immediately after recognition. Requires explicit consent.</p>
+        <h3>c) Language preference</h3>
+        <p>Stored locally in UserDefaults. The only permanently stored information.</p>
+        <h3>d) AI analysis</h3>
+        <p>Performed entirely on-device using Apple Intelligence (FoundationModels). No data sent to servers.</p>
+
+        <h2>4. What data is not collected?</h2>
+        <ul>
+            <li>No personal data</li>
+            <li>No location data</li>
+            <li>No analytics or usage statistics</li>
+            <li>No advertising identifiers (IDFA)</li>
+            <li>No cookies or tracking</li>
+            <li>No data shared with third parties</li>
+            <li>No server connections</li>
+            <li>No IP addresses or device identifiers</li>
+        </ul>
+
+        <h2>5. Third parties &amp; data transfers</h2>
+        <p>No third-party SDKs, no cloud services, no data transfers to third countries. The app works entirely offline.</p>
+
+        <h2>6. Data retention</h2>
+        <p>Document text and camera captures: only during active use in RAM. Language preference: until app is uninstalled.</p>
+
+        <h2>7. Your rights under GDPR</h2>
+        <ul>
+            <li>Right of access (Art. 15)</li>
+            <li>Right to rectification (Art. 16)</li>
+            <li>Right to erasure (Art. 17)</li>
+            <li>Right to restriction (Art. 18)</li>
+            <li>Right to data portability (Art. 20)</li>
+            <li>Right to object (Art. 21)</li>
+            <li>Right to withdraw consent (Art. 7 (3))</li>
+            <li>Right to lodge a complaint (Art. 77)</li>
+        </ul>
+        <p>You can revoke camera consent at any time in iOS Settings. Language preference is deleted by uninstalling the app.</p>
+        <p><strong>Supervisory authority:</strong><br>Bayerisches Landesamt f&uuml;r Datenschutzaufsicht (BayLDA)<br>Promenade 18, 91522 Ansbach<br><a href="https://www.lda.bayern.de" target="_blank">https://www.lda.bayern.de</a></p>
+
+        <h2>8. Children</h2>
+        <p>The app is not intended for children under 16 (Art. 8 GDPR).</p>
+
+        <h2>9. Changes</h2>
+        <p>Changes will be communicated through app updates.</p>
+    </div>
+
+    <!-- Datenschutz ES -->
+    <div id="privacy-es" class="section" data-tab="privacy" data-lang="es">
+        <h2>Pol&iacute;tica de Privacidad</h2>
+        <p><strong>&Uacute;ltima actualizaci&oacute;n:</strong> Mayo 2026<br><strong>Responsable (Art. 4 (7) RGPD):</strong></p>
+        <div class="contact">
+            <p><strong>Pedro Hemme</strong></p>
+            <p>Deutschenbaurstra&szlig;e 33A, 86157 Augsburg, Alemania</p>
+            <p>Correo: <a href="mailto:info@pedrohemme.dev">info@pedrohemme.dev</a></p>
+        </div>
+
+        <h2>1. Resumen</h2>
+        <p>BuroClear es una app offline que ayuda a inmigrantes en Alemania a entender documentos oficiales. Todos los datos se procesan exclusivamente en tu dispositivo. No se transmiten datos a servidores externos.</p>
+
+        <h2>2. Base legal</h2>
+        <p>Preferencia de idioma: Art. 6 (1) (f) RGPD (inter&eacute;s leg&iacute;timo). C&aacute;mara: Art. 6 (1) (a) RGPD (consentimiento).</p>
+
+        <h2>3. &iquest;Qu&eacute; datos procesa la app?</h2>
+        <h3>a) Texto del documento</h3>
+        <p>Se procesa exclusivamente en la RAM. No se guarda en disco ni se env&iacute;a a servidores.</p>
+        <h3>b) Capturas de c&aacute;mara</h3>
+        <p>Solo para OCR, se elimina inmediatamente despu&eacute;s del reconocimiento. Requiere consentimiento expl&iacute;cito.</p>
+        <h3>c) Preferencia de idioma</h3>
+        <p>Se almacena localmente en UserDefaults. La &uacute;nica informaci&oacute;n almacenada permanentemente.</p>
+        <h3>d) An&aacute;lisis con IA</h3>
+        <p>Se realiza completamente en el dispositivo con Apple Intelligence (FoundationModels). No se env&iacute;an datos a servidores.</p>
+
+        <h2>4. &iquest;Qu&eacute; datos no se recopilan?</h2>
+        <ul>
+            <li>Ning&uacute;n dato personal</li>
+            <li>Ning&uacute;n dato de ubicaci&oacute;n</li>
+            <li>Ninguna anal&iacute;tica ni estad&iacute;stica de uso</li>
+            <li>Ning&uacute;n identificador publicitario (IDFA)</li>
+            <li>Ninguna cookie ni rastreo</li>
+            <li>Ning&uacute;n dato compartido con terceros</li>
+            <li>Ninguna conexi&oacute;n a servidores</li>
+            <li>Ninguna direcci&oacute;n IP ni identificador de dispositivo</li>
+        </ul>
+
+        <h2>5. Terceros y transferencias</h2>
+        <p>Sin SDKs de terceros, sin servicios en la nube, sin transferencias a terceros pa&iacute;ses. La app funciona completamente offline.</p>
+
+        <h2>6. Per&iacute;odo de retenci&oacute;n</h2>
+        <p>Texto y capturas: solo durante el uso activo en RAM. Preferencia de idioma: hasta la desinstalaci&oacute;n.</p>
+
+        <h2>7. Tus derechos seg&uacute;n el RGPD</h2>
+        <ul>
+            <li>Derecho de acceso (Art. 15)</li>
+            <li>Derecho de rectificaci&oacute;n (Art. 16)</li>
+            <li>Derecho de supresi&oacute;n (Art. 17)</li>
+            <li>Derecho a la limitaci&oacute;n (Art. 18)</li>
+            <li>Derecho a la portabilidad (Art. 20)</li>
+            <li>Derecho de oposici&oacute;n (Art. 21)</li>
+            <li>Derecho a retirar el consentimiento (Art. 7 (3))</li>
+            <li>Derecho a reclamar ante una autoridad (Art. 77)</li>
+        </ul>
+        <p>Puedes revocar el consentimiento de la c&aacute;mara en los Ajustes de iOS. La preferencia de idioma se elimina al desinstalar.</p>
+        <p><strong>Autoridad de control:</strong><br>Bayerisches Landesamt f&uuml;r Datenschutzaufsicht (BayLDA)<br>Promenade 18, 91522 Ansbach<br><a href="https://www.lda.bayern.de" target="_blank">https://www.lda.bayern.de</a></p>
+
+        <h2>8. Menores</h2>
+        <p>La app no est&aacute; dirigida a menores de 16 a&ntilde;os (Art. 8 RGPD).</p>
+
+        <h2>9. Cambios</h2>
+        <p>Los cambios se comunicar&aacute;n mediante actualizaciones de la app.</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 BuroClear &mdash; Pedro Hemme</p>
+    </div>
+</div>
+
+<script>
+    let currentTab = 'impressum';
+    let currentLang = 'de';
+
+    function showSection() {
+        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+        const el = document.getElementById(currentTab + '-' + currentLang);
+        if (el) el.classList.add('active');
+    }
+
+    function switchTab(tab) {
+        currentTab = tab;
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+        showSection();
+    }
+
+    function switchLang(lang) {
+        currentLang = lang;
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+        showSection();
+    }
+</script>
 </body>
 </html>
